@@ -1,12 +1,11 @@
 @page
-@model dotnetProjects.Pages.Customers.Create
+@model dotnetProjects.Pages.Customers.Edit
 @{
-    ViewData["Title"] = "Create Customer";
+    ViewData["Title"] = "Edit";
 }
-
 <div class="row">
     <div class="col-md-4 offset-md-4">
-        <h2>Create New Customer</h2>
+        <h2>Edit Customer</h2>
         
         @if (!string.IsNullOrEmpty(Model.ErrorMessage))
         {
@@ -16,6 +15,13 @@
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             
+ <div class="mb-3">
+                <label asp-for="Customer.Firstname" class="form-label">ID</label>
+                <div>
+                <input asp-for="Customer.Id" readonly class="form-control-plaintext" />
+                </div>
+            </div>
+
             <div class="mb-3">
                 <label asp-for="Customer.Firstname" class="form-label">Firstname</label>
                 <div>
@@ -53,7 +59,7 @@
                 <textarea asp-for="Customer.Notes" class="form-control"></textarea>
                 <span asp-validation-for="Customer.Notes" class="text-danger"></span>
             </div>
-            <button type="submit" class="btn btn-primary">Create</button>
+            <button type="submit" class="btn btn-primary">Update</button>
             <a class="btn btn-secondary" href="/Customers/Index">Cancel</a>
         </form>
     </div>
