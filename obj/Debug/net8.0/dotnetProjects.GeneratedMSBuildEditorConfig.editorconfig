@@ -22,6 +22,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ3VzdG9tZXJzL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/ravindusandun/dotnetProjects/Pages/Customers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ3VzdG9tZXJzL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/ravindusandun/dotnetProjects/Pages/Customers/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ3VzdG9tZXJzL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
