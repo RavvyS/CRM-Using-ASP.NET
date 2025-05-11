@@ -1,0 +1,47 @@
+@page
+@model dotnetProjects.Pages.Customers.Create
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="row">
+    <div class="col-md-4 offset-md-4">
+        <h2 class="text-center mb-3">Create New Customer</h2>
+        <form method="post">
+            <div class="mb-3">
+                <label asp-for="Customer.Firstname" class="form-label">Firstname</label>
+                <div>
+                <input asp-for="Customer.Firstname" class="form-control" />
+                <span asp-validation-for="Customer.Firstname" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Customer.Lastname" class="form-label">Lastname</label>
+                <input asp-for="Customer.Lastname" class="form-control" />
+            </div>
+            <div class="mb-3">
+                <label asp-for="Customer.Email" class="form-label">Email</label>
+                <input asp-for="Customer.Email" class="form-control" />
+            </div>
+            <div class="mb-3">
+                <label asp-for="Customer.Phone" class="form-label">Phone</label>
+                <input asp-for="Customer.Phone" class="form-control" />
+            </div>
+            <div class="mb-3">
+                <label asp-for="Customer.Address" class="form-label">Address</label>
+                <input asp-for="Customer.Address" class="form-control" />
+            </div>
+            <div class="mb-3">
+                <label asp-for="Customer.Company" class="form-label">Company</label>
+                <input asp-for="Customer.Company" class="form-control" />
+            </div>
+            <div class="mb-3">
+                <label asp-for="Customer.Notes" class="form-label">Notes</label>
+                <textarea asp-for="Customer.Notes" class="form-control"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Create</button>
+            <a class="btn btn-secondary" href="/Customers/Index">Cancel</a>
+            
+        </form>
+    </div>
+</div>
